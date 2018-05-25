@@ -10,8 +10,8 @@ const web3 = origin.contractService.web3
 const networkNames = {
   1: 'Main',
   2: 'Morden',
-  3: 'Ropsten',
-  4: 'Rinkeby',
+  3: 'Ropsten Test',
+  4: 'Rinkeby Test',
   42: 'Kovan',
   999: 'Localhost',
 }
@@ -45,8 +45,8 @@ const UnsupportedNetwork = props => (
     <div className="image-container">
       <img src="images/flat_cross_icon.svg" role="presentation" />
     </div>
-    MetaMask should be on <span><strong>Rinkeby</strong> Test Network</span><br />
-    Currently on {props.currentNetworkName}.
+    <p>MetaMask should be on <strong>Rinkeby</strong> Test Network<br />
+    Currently on {props.currentNetworkName}.</p>
   </Modal>
 )
 
