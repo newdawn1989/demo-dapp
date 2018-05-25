@@ -45,7 +45,7 @@ const UnsupportedNetwork = props => (
     <div className="image-container">
       <img src="images/flat_cross_icon.svg" role="presentation" />
     </div>
-    MetaMask should be on <span><strong>Rinkeby</strong> Network</span><br />
+    MetaMask should be on <span><strong>Rinkeby</strong> Test Network</span><br />
     Currently on {props.currentNetworkName}.
   </Modal>
 )
