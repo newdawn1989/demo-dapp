@@ -48,7 +48,8 @@ const UnsupportedNetwork = props => (
     <p>
       MetaMask should be on<br />
       <strong>Rinkeby</strong> Test Network<br />
-      Currently on {props.currentNetworkName}.
+      Currently on<br />
+      <b>{props.currentNetworkName}</b>.
     </p>
   </Modal>
 )
