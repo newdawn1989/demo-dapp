@@ -8,10 +8,10 @@ import { showAlert } from '../actions/Alert'
 const web3 = origin.contractService.web3
 
 const networkNames = {
-  1: 'Main',
+  1: 'Main Ethereum Network',
   2: 'Morden',
-  3: 'Ropsten Test',
-  4: 'Rinkeby Test',
+  3: 'Ropsten Test Network',
+  4: 'Rinkeby Test Network',
   42: 'Kovan',
   999: 'Localhost',
 }
@@ -44,9 +44,12 @@ const UnsupportedNetwork = props => (
   <Modal backdrop="static" data-modal="web3-unavailable" isOpen={true}>
     <div className="image-container">
       <img src="images/flat_cross_icon.svg" role="presentation" />
-    </div>
-    <p>MetaMask should be on <strong>Rinkeby</strong> Test Network<br />
-    Currently on {props.currentNetworkName}.</p>
+    </div> 
+    <p>
+      MetaMask should be on<br />
+      <strong>Rinkeby</strong> Test Network<br />
+      Currently on {props.currentNetworkName}.
+    </p>
   </Modal>
 )
 

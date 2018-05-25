@@ -7,10 +7,10 @@ const ipfsGateway = process.env.IPFS_DOMAIN || 'gateway.originprotocol.com'
 const bridgeServerDomain = process.env.BRIDGE_SERVER_DOMAIN || 'bridge.originprotocol.com'
 const web3 = origin.contractService.web3
 const networkNames = {
-  1: 'Main',
+  1: 'Main Ethereum Network',
   2: 'Morden',
-  3: 'Ropsten',
-  4: 'Rinkeby',
+  3: 'Ropsten Test Network',
+  4: 'Rinkeby Test Network',
   42: 'Kovan',
   999: 'Localhost',
 }
